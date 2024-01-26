@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:e2e": "TS_NODE_PROJECT=./test/tsconfig.e2e.json TS_NODE_TYPE_CHECK=true wdio run wdio.conf.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.28.8",
+    "@wdio/local-runner": "^8.28.8",
+    "@wdio/mocha-framework": "^8.28.8",
+    "@wdio/spec-reporter": "^8.28.8",
+    "ts-node": "^10.9.2"
   }
 }
