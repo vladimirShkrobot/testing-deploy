@@ -1,6 +1,5 @@
 import { $ } from "@wdio/globals";
 import Page from "./page";
-import { useLoaderData } from "react-router-dom";
 
 class UsersPage extends Page {
   get loadingTitle() {
