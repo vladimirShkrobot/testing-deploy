@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { FC } from "react";
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 
 interface LayoutProps {}
 
-const Layout: FC<LayoutProps> = ({}) => {
+const Layout: FC<LayoutProps> = () => {
   return (
     <div>
       <Navbar />

@@ -4,7 +4,7 @@ interface AboutProps {
 	
 }
 
-const About: FC<AboutProps> = ({}) => {
+const About: FC<AboutProps> = () => {
 	return (
 		<div data-testid="about-page">
 			ABOUT

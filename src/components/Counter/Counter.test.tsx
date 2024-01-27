@@ -1,11 +1,10 @@
-import { render, screen } from "@testing-library/react";
-import Counter from "./Counter";
-import { act } from "react-dom/test-utils";
 import userEvent from "@testing-library/user-event";
+import { act } from "react-dom/test-utils";
 import { renderTestApp } from "../../tests/helpers/renderTestApp";
+import Counter from "./Counter";
 
 describe("Counter test", () => {
-  test("Test router", () => {
+  test("router", () => {
     const { getByTestId } = renderTestApp(<Counter />, {
       counter: { value: 10 },
     });

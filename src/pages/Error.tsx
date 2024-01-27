@@ -4,7 +4,7 @@ interface ErrorPageProps {
 	
 }
 
-const ErrorPage: FC<ErrorPageProps> = ({}) => {
+const ErrorPage: FC<ErrorPageProps> = () => {
 	return (
 		<div data-testid="not-found-page">
 			Error

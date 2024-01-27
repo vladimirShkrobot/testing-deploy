@@ -1,10 +1,9 @@
-import { screen } from "@testing-library/react";
+import { act, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { act } from "react-dom/test-utils";
 import { renderTestApp } from "../../tests/helpers/renderTestApp";
 
 describe("TEST NAVBAR", () => {
-  test("test about link", async () => {
+  test("about link", async () => {
     renderTestApp();
     const aboutLink = screen.getByTestId("about-link");
     act(() => {
@@ -13,7 +12,7 @@ describe("TEST NAVBAR", () => {
     expect(screen.getByTestId("about-page")).toBeInTheDocument();
   });
 
-  test("test main link", async () => {
+  test("main link", async () => {
     renderTestApp();
     const mainLink = screen.getByTestId("main-link");
     act(() => {
@@ -22,7 +21,7 @@ describe("TEST NAVBAR", () => {
     expect(screen.getByTestId("main-page")).toBeInTheDocument();
   });
 
-  test("test users link", async () => {
+  test("users link", async () => {
     renderTestApp();
     const usersLink = screen.getByTestId("users-link");
     act(() => {

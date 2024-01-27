@@ -1,8 +1,8 @@
-import React, { ChangeEvent, FC, SyntheticEvent, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 
 interface HelloWorldProps {}
 
-const HelloWorld: FC<HelloWorldProps> = ({}) => {
+const HelloWorld: FC<HelloWorldProps> = () => {
   const [value, setValue] = useState("");
   const [visible, setVisible] = useState(false);
 

@@ -1,8 +1,8 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 interface EventsProps {}
 
-const Events: FC<EventsProps> = ({}) => {
+const Events: FC<EventsProps> = () => {
   const [data, setData] = useState<object | null>(null);
   const [toggle, setToggle] = useState<boolean>(false);
   const [value, setValue] = useState("");

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { IUser } from "../../models/IUser";
 
 interface UsersProps {}
-const Users: FC<UsersProps> = ({}) => {
+const Users: FC<UsersProps> = () => {
   const [users, setUsers] = useState<IUser[]>([]);
 
   const getUsers = async () => {

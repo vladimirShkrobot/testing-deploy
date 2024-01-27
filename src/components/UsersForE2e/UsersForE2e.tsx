@@ -4,7 +4,7 @@ import User from "./User";
 
 interface UsersForE2eProps {}
 
-const UsersForE2e: FC<UsersForE2eProps> = ({}) => {
+const UsersForE2e: FC<UsersForE2eProps> = () => {
   const [users, setUsers] = useState<IUser[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 

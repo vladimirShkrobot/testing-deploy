@@ -1,12 +1,11 @@
-import React, { FC } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { FC } from "react";
+import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { getCounterValue } from "../../store/selectors/counter/counter";
 import { decrement, increment } from "../../store/slices/counterSlice";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 
 interface CounterProps {}
 
-const Counter: FC<CounterProps> = ({}) => {
+const Counter: FC<CounterProps> = () => {
   const dispatch = useAppDispatch();
   const value = useAppSelector(getCounterValue);
 
