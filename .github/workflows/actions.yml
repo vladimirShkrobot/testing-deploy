@@ -13,10 +13,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: linter
-        run: npm run lint
       - name: install modules
         run: npm install
+      - name: linter
+        run: npm run lint
       - name: start app
         run: npm start &
       - name: build project
