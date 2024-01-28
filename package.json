@@ -28,12 +28,8 @@
     "test:e2e": "TS_NODE_PROJECT=./test/tsconfig.e2e.json TS_NODE_TYPE_CHECK=true wdio run wdio.conf.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "eslint src"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm test"
-    }
+    "lint": "eslint src",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
