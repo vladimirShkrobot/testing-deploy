@@ -26,5 +26,9 @@ jobs:
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo dpkg -i google-chrome-stable_current_amd64.deb
           sudo apt-get install -f
+      - name: Set Up Headless Display
+        run: |
+          export DISPLAY=:99
+          Xvfb -screen 0 1920x1080x24 :99 &
       - name: e2e tests
         run: npm run test:e2e
