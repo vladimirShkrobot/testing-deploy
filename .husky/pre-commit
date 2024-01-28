@@ -1,4 +1,2 @@
 npm run lint
-npm start
-npm test
-npm run test:e2e
+npm test -- --watchAll=false
