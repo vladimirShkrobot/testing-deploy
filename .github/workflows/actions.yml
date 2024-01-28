@@ -21,11 +21,10 @@ jobs:
         run: npm run test
       - name: unit tests
         run: npm run test
-      - name: Install Google Chrome
+      - name: Install Required Packages
         run: |
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb
-          sudo apt-get install -f
+          sudo apt-get update
+          sudo apt-get install -y libnss3-dev libatk-bridge2.0-0 libx11-xcb-dev libgtk-3-0
       - name: Set Up Headless Display
         run: |
           export DISPLAY=:99
