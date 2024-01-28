@@ -14,7 +14,6 @@ const Counter: FC<CounterProps> = () => {
   };
 
   const onDecrement = () => {
-    console.log(1)
     dispatch(decrement());
   };
 
