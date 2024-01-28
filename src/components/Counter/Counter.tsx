@@ -14,7 +14,7 @@ const Counter: FC<CounterProps> = () => {
   };
 
   const onDecrement = () => {
-    dispatch(decrement());}}
+    dispatch(decrement());
   };
 
   return (
